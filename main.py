@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 from tqdm import tqdm
 
-KEYWORDS = {'изменение', 'фото', 'web', 'python', 'Муромец', 'Редакция', 'единую', 'DevOps*', 'Big Data*'}
+from keywords import KEYWORDS
 
 
 class Habr:
@@ -11,11 +11,13 @@ class Habr:
     def __init__(self, keywords, pages=1):
         self.url = 'https://habr.com'
         self.keywords = keywords
-        self.result = {}
+        self.result = []
         self.pages = pages
 
     def _get_response(self, page):
-        response = requests.get(self.url+'/ru/all/page' + str(page))
+        response = requests.get(url=self.url + '/ru/all/page' + str(page),
+                                headers={'User-Agent': 'Chrome/70.0.3538.77'}
+                                )
         response.raise_for_status()
         soup = BeautifulSoup(response.text, features='html.parser')
         news = soup.find_all('article', class_='tm-articles-list__item')
@@ -23,9 +25,9 @@ class Habr:
 
     def find_preview(self):
         for page in range(self.pages):
-            news = self._get_response(page+1)
+            news = self._get_response(page + 1)
             for article in tqdm(news,
-                                desc=f'Ищем информацию в превью, стр: {page+1}',
+                                desc=f'Ищем информацию в превью, стр: {page + 1}',
                                 colour='Yellow'):
                 text = article.find('div', class_='article-formatted-body article-formatted-body_version-1')
                 if text is None:
@@ -37,9 +39,9 @@ class Habr:
 
     def find_all_post(self):
         for page in range(self.pages):
-            news = self._get_response(page+1)
+            news = self._get_response(page + 1)
             for article in tqdm(news,
-                                desc=f'Сканируем целый пост, стр: {page+1}',
+                                desc=f'Сканируем целый пост, стр: {page + 1}',
                                 colour='green'):
                 link = article.find('a', class_='tm-article-snippet__title-link')
                 if link is not None:
@@ -53,9 +55,9 @@ class Habr:
 
     def find_hubs(self):
         for page in range(self.pages):
-            news = self._get_response(page+1)
+            news = self._get_response(page + 1)
             for article in tqdm(news,
-                                desc=f'Проверяем хабы на соответствие, стр: {page+1}',
+                                desc=f'Проверяем хабы на соответствие, стр: {page + 1}',
                                 colour='MAGENTA'):
                 link = article.find('a', class_='tm-article-snippet__title-link')
                 if link is not None:
@@ -69,7 +71,11 @@ class Habr:
             title = link.find('span').text
             href = self.url + link.attrs.get('href')
             posting_time = article.find('time').attrs.get('title')
-            self.result[title] = [posting_time, href, key]
+            self.result.append({'title': title,
+                                'posting_time': posting_time,
+                                'url': href,
+                                'keywords': key
+                                })
             return self.result
 
 
@@ -80,10 +86,8 @@ def save_json(content, file_name):
 
 
 if __name__ == '__main__':
-    one = Habr(KEYWORDS, 3)
+    one = Habr(KEYWORDS, pages=5)
     one.find_all_post()
     one.find_hubs()
     one.find_preview()
-    for news in one.result:
-        print(f'{one.result[news][0]} - {news} - {one.result[news][1]} - {one.result[news][2]}')
     save_json(one.result, 'result')

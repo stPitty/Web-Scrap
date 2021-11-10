@@ -1,67 +1,128 @@
-{
-  "Как обмануть автопилот PX4: настоящая HITL-симуляция на шине UAVCAN": [
-    "2021-09-03, 19:10",
-    "https://habr.com/ru/post/576268/",
-    "единую, изменение"
-  ],
-  "Аналоговое и цифровое питание. Мифы и реальность": [
-    "2021-09-03, 18:07",
-    "https://habr.com/ru/company/twin3d/blog/576250/",
-    "изменение"
-  ],
-  "MKINITCPIO V31 и заглушки UEFI": [
-    "2021-09-03, 16:00",
-    "https://habr.com/ru/company/ruvds/blog/574942/",
-    "изменение"
-  ],
-  "От тестировщика — к QA инженеру. Советы новичкам": [
-    "2021-09-03, 15:45",
-    "https://habr.com/ru/company/nix/blog/576208/",
-    "web"
-  ],
-  "Должен ли удаленщик получать меньше/больше?": [
-    "2021-09-03, 13:39",
-    "https://habr.com/ru/company/maxilect/blog/576170/",
-    "изменение"
-  ],
-  "Акустические свойства музыкальной древесины, опыт 5: ещё 10 пород и 2 новых модели гитарных усилителей": [
-    "2021-09-03, 12:00",
-    "https://habr.com/ru/company/ruvds/blog/574052/",
-    "фото"
-  ],
-  "Как поменять архитектуру облака и не поломать пользовательский опыт": [
-    "2021-09-03, 11:42",
-    "https://habr.com/ru/company/oleg-bunin/blog/554670/",
-    "изменение"
-  ],
-  "Мончегорск летом": [
-    "2021-09-03, 11:07",
-    "https://habr.com/ru/post/576102/",
-    "фото"
-  ],
-  "Энциклопедия интеропа: Kotlin-Swift-Interopedia": [
-    "2021-09-03, 09:00",
-    "https://habr.com/ru/company/hh/blog/575996/",
-    "единую"
-  ],
-  "Tesla Bot Илона Маска": [
-    "2021-09-03, 01:29",
-    "https://habr.com/ru/post/576106/",
-    "изменение"
-  ],
-  "Security — как много в этом звуке для сердца девопсного слилось": [
-    "2021-09-03, 23:38",
-    "https://habr.com/ru/company/jugru/blog/573370/",
-    "DevOps*"
-  ],
-  "ИБП для медицинских учреждений": [
-    "2021-09-03, 19:26",
-    "https://habr.com/ru/company/eaton/blog/576272/",
-    "Big Data*"
-  ],
-  "Новые стандарты DevSecOps и GitLab": [
-    "2021-09-03, 13:32",
-    "https://habr.com/ru/company/gitlab/blog/567838/",
-    "DevOps*"
-  ]
-}
+[
+  {
+    "title": "Использование Jetpack Compose в продакшне: первые впечатления",
+    "posting_time": "2021-11-10, 15:07",
+    "url": "https://habr.com/ru/company/ru_mts/blog/588096/",
+    "keywords": "небольшого"
+  },
+  {
+    "title": "В море незнакомых лиц найти родное: система «свой-чужой» мозга человека",
+    "posting_time": "2021-11-10, 15:00",
+    "url": "https://habr.com/ru/company/ua-hosting/blog/588002/",
+    "keywords": "Распознавание, фото"
+  },
+  {
+    "title": "Педальку в пол, или как ещё ускорить CPU-bound приложение?",
+    "posting_time": "2021-11-10, 14:55",
+    "url": "https://habr.com/ru/company/huawei/blog/588290/",
+    "keywords": "изменение"
+  },
+  {
+    "title": "Самая большая проблема в ваших проектах прямо сейчас",
+    "posting_time": "2021-11-10, 14:49",
+    "url": "https://habr.com/ru/company/2gis/blog/588346/",
+    "keywords": "небольшого"
+  },
+  {
+    "title": "Тонкости настройки экранов статуса заказа",
+    "posting_time": "2021-11-10, 13:55",
+    "url": "https://habr.com/ru/company/dododev/blog/586198/",
+    "keywords": "фото"
+  },
+  {
+    "title": "Почему температура тела людей падает последние 200 лет",
+    "posting_time": "2021-11-10, 13:21",
+    "url": "https://habr.com/ru/company/gms/blog/588310/",
+    "keywords": "изменение"
+  },
+  {
+    "title": "Что ещё труднее купить, чем микросхемы? Оборудование для их производства! ",
+    "posting_time": "2021-11-10, 13:14",
+    "url": "https://habr.com/ru/company/dcmiran/blog/588308/",
+    "keywords": "изменение"
+  },
+  {
+    "title": "Проектирование простой системы учёта товаров на небольшом складе",
+    "posting_time": "2021-11-10, 11:00",
+    "url": "https://habr.com/ru/company/first/blog/586956/",
+    "keywords": "небольшого"
+  },
+  {
+    "title": "JavaScript: заметка о requestAnimationFrame и requestIdleCallback",
+    "posting_time": "2021-11-10, 10:15",
+    "url": "https://habr.com/ru/company/timeweb/blog/587908/",
+    "keywords": "web"
+  },
+  {
+    "title": "Apple TV 1st generation. Вторая жизнь 15 лет спустя",
+    "posting_time": "2021-11-10, 09:00",
+    "url": "https://habr.com/ru/company/timeweb/blog/587456/",
+    "keywords": "фото"
+  },
+  {
+    "title": "Мониторинг электросчетчиков за один вечер",
+    "posting_time": "2021-11-09, 23:17",
+    "url": "https://habr.com/ru/post/588218/",
+    "keywords": "web"
+  },
+  {
+    "title": "Мелкая логистика маленького дата-центра (что летит и как часто)",
+    "posting_time": "2021-11-09, 16:02",
+    "url": "https://habr.com/ru/company/ruvds/blog/588136/",
+    "keywords": "небольшого"
+  },
+  {
+    "title": "Пишем распределенное хранилище за полчаса",
+    "posting_time": "2021-11-09, 15:52",
+    "url": "https://habr.com/ru/company/vk/blog/588046/",
+    "keywords": "небольшого"
+  },
+  {
+    "title": "Формирование национальной экосистемы на основе цифровых технологий и «умных вещей»",
+    "posting_time": "2021-11-09, 14:14",
+    "url": "https://habr.com/ru/post/588074/",
+    "keywords": "изменение"
+  },
+  {
+    "title": "Собеседование наоборот: EPAM, Хоум Кредит, Леруа Мерлен и Usetech (часть 2)",
+    "posting_time": "2021-11-09, 13:19",
+    "url": "https://habr.com/ru/company/habr_career/blog/588056/",
+    "keywords": "фото"
+  },
+  {
+    "title": "ГАЗ-69 советский лёгкий внедорожник, ставший культовым",
+    "posting_time": "2021-11-09, 12:15",
+    "url": "https://habr.com/ru/post/587380/",
+    "keywords": "фото"
+  },
+  {
+    "title": "Как добавить обязательный запрос на IDFA через App Tracking Transparency",
+    "posting_time": "2021-11-09, 11:30",
+    "url": "https://habr.com/ru/company/funcorp/blog/588008/",
+    "keywords": "фото"
+  },
+  {
+    "title": "Нельзя просто взять и влиться в data-driven — на что обратить внимание при внедрении такого подхода",
+    "posting_time": "2021-11-09, 10:12",
+    "url": "https://habr.com/ru/company/X5Group/blog/587966/",
+    "keywords": "изменение"
+  },
+  {
+    "title": "Huawei Hyper Smart: когда просто хранения недостаточно",
+    "posting_time": "2021-11-09, 10:05",
+    "url": "https://habr.com/ru/company/lanit/blog/586306/",
+    "keywords": "изменение"
+  },
+  {
+    "title": "Почему каждому Дата-сайентисту нужен Инженер данных?",
+    "posting_time": "2021-11-09, 09:14",
+    "url": "https://habr.com/ru/post/587974/",
+    "keywords": "изменение"
+  },
+  {
+    "title": "Самая большая проблема в ваших проектах прямо сейчас",
+    "posting_time": "2021-11-10, 14:49",
+    "url": "https://habr.com/ru/company/2gis/blog/588346/",
+    "keywords": "небольшого"
+  }
+]
